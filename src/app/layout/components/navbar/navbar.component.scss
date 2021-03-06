@@ -1,0 +1,13 @@
+.navbar {
+  height: 10vh;
+  max-height: 10vh;
+  
+  .navbar-brand{
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.drop-right {
+  left: unset;
+  right: 0;
+}

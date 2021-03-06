@@ -1,0 +1,26 @@
+.footer {
+  color: #eee;
+  height: 10vh;
+  max-height: 10vh;
+}
+
+hr {
+  background-color: #5d5d5d;
+}
+
+.social > fa-icon {
+  margin: 0 1rem;
+  color: #5d5d5d;
+  transition: color 0.3s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    color: #eee;
+  }
+}
+
+.sub-btn {
+  color: #fff;
+  background-color: #e7663e;
+  border-color: #e7663e;
+}

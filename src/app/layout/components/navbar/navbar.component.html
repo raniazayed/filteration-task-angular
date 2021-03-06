@@ -1,0 +1,55 @@
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" [routerLink]="['/']">Logo</a>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto mb-2 mb-md-0 w-100">
+          <li class="nav-item ml-auto text-center">
+            <a class="nav-link" aria-current="page" href="javascript:">{{
+              currentDate | date
+            }}</a>
+          </li>
+          <li ngbDropdown class="nav-item ml-auto">
+            <button ngbDropdownToggle id="dropdownBasic2" class="nav-link btn">
+              {{ (locale === 'ar' ? 'arabic' : 'english') | translate }}
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+              <button
+                *ngIf="locale === 'ar'"
+                (click)="changeLang('en')"
+                ngbDropdownItem
+              >
+                {{ 'english' | translate }}
+              </button>
+              <button
+                *ngIf="locale === 'en'"
+                (click)="changeLang('ar')"
+                ngbDropdownItem
+              >
+                {{ 'arabic' | translate }}
+              </button>
+            </div>
+          </li>
+          <li ngbDropdown class="nav-item ml-2">
+            <button ngbDropdownToggle id="dropdownBasic1" class="nav-link btn">
+              Rania zayed
+            </button>
+            <div
+              ngbDropdownMenu
+              class="drop-right"
+              aria-labelledby="dropdownBasic1"
+            >
+              <button ngbDropdownItem>{{ 'profile' | translate }}</button>
+              <button ngbDropdownItem>
+                {{ 'accountSettings' | translate }}
+              </button>
+              <button ngbDropdownItem>{{ 'logout' | translate }}</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

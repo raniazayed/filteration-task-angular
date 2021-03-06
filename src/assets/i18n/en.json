@@ -1,0 +1,27 @@
+{
+  "profile": "Profile",
+  "accountSettings": "Account Settings",
+  "logout": "Logout",
+  "allRightsReserved": "All Rights Reserved",
+  "copyRightRaniaZayed":"Copyright @ 2021 Rania Zayed",
+  "arabic": "عربي",
+  "english": "English",
+  "searchEmployees": "Search Employees",
+  "addEmployee": "Add Employee",
+  "dummyLink": "Dummy Link",
+  "add": "Add",
+  "employeeName": "Employee Name",
+  "department": "Department",
+  "employeeCode": "Employee Code",
+  "birthdate": "Birthdate",
+  "gender": "Gender",
+  "male": "Male",
+  "female": "Female",
+  "search": "Search",
+  "clear": "Clear",
+  "dashboard":"Dashboard",
+  "validation": {
+    "required": "This Field Is Required",
+    "positive": "Value Should Be A Positive Number"
+  }
+}
